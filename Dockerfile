@@ -32,10 +32,7 @@ RUN bash models/download_models.sh
 
 ############### additional code by In It To Win It ###############
 
-#VOLUME /root/neural-style/content-inputs
-#VOLUME /root/neural-style/style-inputs
-#VOLUME /root/neural-style/outputs
+RUN touch run-ns-in-ens.py
+RUN curl -s https://raw.githubusercontent.com/ronachong/easy-neural-style/master/run-ns-in-ens.py > /root/neural-style/run-ns-in-ens.py
 
-#VOLUME ~/neural-style/content-inputs:/root/neural-style/content-inputs
-#VOLUME ~/neural-style/style-inputs:/root/neural-style/style-inputs
-#VOLUME ~/neural-style/output:/root/neural-style/output
+CMD ["python", "run-ns-in-ens.py"]
