@@ -2,8 +2,8 @@
 
 # make prerequisite repositories on host
 mkdir ~/neural-style
-mkdir ~/neural-style/style_inputs
-mkdir ~/neural-style/content_inputs
+mkdir ~/neural-style/style-inputs
+mkdir ~/neural-style/content-inputs
 mkdir ~/neural-style/outputs
 
 # start docker-machine with high memory settings
