@@ -18,4 +18,4 @@ fi
 # start docker daemon
 eval $(docker-machine env default)
 
-docker run -v ~/neural-style/content-inputs:/root/neural-style/content-inputs -v ~/neural-style/style-inputs:/root/neural-style/style-inputs -v ~/neural-style/outputs:/root/neural-style/outputs --name easy-neural-style -ti rochong/neural-style
+docker run -v ~/neural-style/content-inputs:/root/neural-style/content-inputs -v ~/neural-style/style-inputs:/root/neural-style/style-inputs -v ~/neural-style/outputs:/root/neural-style/outputs --name easy-neural-style -ti rochong/easy-neural-style
